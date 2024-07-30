@@ -64,7 +64,7 @@ app.post('/signin',async(req,res)=>{
    bcrypt.compare(password,user.password,(err,result)=>{
     if(result){     
           // creating token using jwt 
-          let token =   jwt.sign({email:email,userId : createdUser._id},'shhhhhh');
+          let token =   jwt.sign({email:email, userId :user._id},'shhhhhh');
           // setting token 
           res.cookie("token",token);
 

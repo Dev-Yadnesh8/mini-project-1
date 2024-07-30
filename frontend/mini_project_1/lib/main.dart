@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mini_project_1/features/auth/view/sign_in_screen.dart';
+import 'package:mini_project_1/features/auth/screens/login/ui/login_screen.dart';
+import 'package:mini_project_1/utils/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +12,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       title: 'Mini Project 1',
-    
-      home: SignInScreen()
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
+      home: LoginScreen()
     );
   }
 }
