@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mini_project_1/utils/routes/route_names.dart';
+import 'package:mini_project_1/utils/routes/routes.dart';
 import 'package:mini_project_1/utils/theme/theme.dart';
 
 void main() {
@@ -16,6 +18,9 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
+      initialRoute: RouteNames.home,
+      onGenerateRoute: Routes.generateRoute,
     );
+  
   }
 }

@@ -39,7 +39,7 @@ dependencies:
   google_fonts: ^6.2.1
 
   #...... network requesties .......#
-  dio: ^5.5.0+1
+  http: ^1.2.2
 
   #....... state management .......#
   provider: ^6.1.2
@@ -51,6 +51,7 @@ dependencies:
 
   #....... showing messages to user ......#
   another_flushbar: ^1.12.30
+  fluttertoast: ^8.2.6
 
 dev_dependencies:
   flutter_test:
